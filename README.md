@@ -21,15 +21,19 @@ Dog class (does not inherit from the Pets class); saved in the pets_class.py fil
 2. Instance attribute is_hungry = True. 
 3. Method called eat() which changes the value of is_hungry to False when called. 
 The final output looks like this:
-```I have 3 dogs. 
+
+```
+I have 3 dogs. 
 Tom is 6. 
 Fletcher is 7. 
 Larry is 9. 
 And they're all mammals, of course. 
-My dogs are not hungry.```
+My dogs are not hungry.
+```
 
 Method called walk() in both the Pets and Dog classes so that when you call the method on the Pets class, each dog instance assigned to the Pets class will walk(); saved in the dogs_walking.py file. 
 The output looks like this:
+
 ```
 Tom is walking!
 Fletcher is walking!
