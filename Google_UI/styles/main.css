@@ -1,0 +1,354 @@
+html{
+    background-color: white;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar ul li{
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 16px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.navbar ul li a, .navbar ul li button{
+    cursor: pointer;
+}
+
+.navbar ul li #right{
+    float: left;
+}
+
+section{
+    padding-top: 40px;
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+    padding: 150px;
+    text-align: center;
+    font-size: 100px;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.container p{
+    font-size: 15px;
+    color: rgb(36, 33, 33);
+}
+
+.container p a{
+    text-decoration: none;
+}
+
+.searchBox{
+    margin: auto;
+    width: 50%;
+}
+
+.bodyButton1, .bodyButton2{
+    background-color: rgb(240, 235, 235);
+    color: grey;
+    margin: auto;
+    border: none;
+    padding: 8px 10px;
+    font-weight: bolder
+}
+
+.blueFont{
+    color: rgb(0, 119, 255);
+}
+
+.redFont{
+    color: rgb(250, 75, 75);
+}
+
+.yellowFont{
+    color: rgb(216, 219, 15);
+}
+
+.greenFont{
+    color: rgb(66, 156, 66);
+}
+
+input{
+    width: 75%;
+    box-shadow: 1px 3px 5px 1px rgb(206, 205, 205);
+    border-radius: 0;
+    padding: 12px 10px;
+    border: none;
+    border-color: black;
+    background: url("../images/Google_mic.svg.png") no-repeat scroll right 9px;
+    padding-right:40px;
+    padding-left: 20px;
+}
+
+.userIcon{
+    border-radius: 100%;
+    background-color: rgb(101, 23, 153);
+    border: none;
+    color: white;
+    width: 37px;
+    height: 37px;
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.ibutton{
+    border-radius: 100%;
+    background-color: rgb(119, 117, 117);
+    border: none;
+    color: white;
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ibutton i{
+    font-size: 10px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(241, 236, 236);
+    left: 0;
+    width: 100%;
+    color: grey;
+    padding: 5px 0px;
+}
+
+.footer .footernav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer .footernav ul li a{
+    float: left;
+    display: block;
+    padding: 0 5px 0 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.footer span{
+    margin-left: 40px;
+}
+
+
+@media screen and (max-width: 600px){
+    .navbar{
+        padding-top: 8px;
+    }
+
+    .navbar ul li a {
+        display: inline;
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    .userIcon{
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+        margin-right: 15px;
+        margin-left: 1px;
+    }
+    
+    .ibutton{
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+        margin-right: 8px;
+        margin-left: 5px;
+    }
+    
+    .ibutton i{
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 50%;
+        padding: 70px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .container p{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .container p a{
+        padding:4px;
+    }
+
+    input{
+        width: 100%;
+        box-shadow: 1px 3px 5px 1px rgb(206, 205, 205);
+        border-radius: 0;
+        padding: 6px;
+        border: none;
+        border-color: black;
+        background: url("../images/Google_mic.svg.png") no-repeat scroll right 2px;
+        padding-right:30px;
+    }
+
+    .bodyButton1{
+        margin: 0;
+        font-size: 12px;
+        padding: 3px 6px;
+        font-weight: 500;
+    }
+
+    .bodyButton2{
+        display: none;
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(241, 236, 236);
+        left: 0;
+        width: 100%;
+        color: grey;
+        padding: 0;
+    }
+    
+    .footer .footernav ul{
+        list-style-type: none;
+        overflow: hidden;
+    }
+    
+    .footer .footernav ul li a{
+        float: left;
+        display: block;
+        padding: 0 6px;
+        font-size: 10px;
+    }
+
+    .footer span{
+        margin-left: 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .navbar{
+        padding-top: 10px;
+    }
+
+    .navbar ul li a {
+        display: inline;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .userIcon{
+        width: 33px;
+        height: 33px;
+        margin-top: 0;
+        margin-right: 15px;
+        margin-left: 1px;
+    }
+    
+    .ibutton{
+        width: 23px;
+        height: 23px;
+        margin-top: 3px;
+        margin-right: 8px;
+        margin-left: 5px;
+    }
+    
+    .ibutton i{
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 50%;
+        padding: 70px;
+        text-align: center;
+        font-size: 70px;
+    }
+    
+    .container p{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .container p a{
+        padding:4px;
+    }
+
+    input{
+        width: 100%;
+        box-shadow: 1px 3px 5px 1px rgb(206, 205, 205);
+        border-radius: 0;
+        padding: 6px;
+        border: none;
+        border-color: black;
+        background: url("../images/Google_mic.svg.png") no-repeat scroll right 2px;
+        padding-right:10px;
+        padding-left: 10px;
+    }
+
+    .bodyButton1{
+        margin: 0;
+        font-size: 12px;
+        padding: 3px 6px;
+        font-weight: 500;
+    }
+
+    .bodyButton2{
+        margin: 0;
+        font-size: 12px;
+        padding: 3px 6px;
+        font-weight: 500;
+    }
+    
+    .footer .footernav ul li a{
+        /* float: left;
+        display: block; */
+        padding: 0 25px;
+        font-size: 12px;
+    }
+
+    .footer span{
+        margin-left: 20px;
+    }
+
+}
